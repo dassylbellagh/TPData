@@ -22,15 +22,15 @@ object SampleApplication {
 
     //Service 1
     var resService1 = Service1.implemService1(df)
-    //SparkReaderWriter.writeData(resService1,configCli.outputPath, configCli.outputFormat)
+    SparkReaderWriter.writeData(resService1,configCli.outputPath, configCli.outputFormat)
 
     //Service 2
     var resService2 = Service2.implemService2(df)
-    //SparkReaderWriter.writeData(resService2,configCli.outputPath, configCli.outputFormat)
+    SparkReaderWriter.writeData(resService2,configCli.outputPath, configCli.outputFormat)
 
     //Service 3
     var resService3 = Service3.implemService3(df)
-    //SparkReaderWriter.writeData(resService3,configCli.outputPath, configCli.outputFormat)
+    SparkReaderWriter.writeData(resService3,configCli.outputPath, configCli.outputFormat)
 
     //TO DO : Send email
 
