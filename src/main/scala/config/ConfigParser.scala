@@ -3,7 +3,7 @@ package config
 import scopt.{DefaultOParserSetup, OParserBuilder, OParserSetup}
 
 
-case class ConfigParser(inputPath: String = "D:\\microserviceTP\\untitled2\\data\\data.csv", inputFormat: String = "csv", outputFormat: String = "csv" , outputPath: String = "D:\\microserviceTP\\untitled2\\result\\ResultData.csv", service: String = "service1", clientId : String ="292494523"  )
+case class ConfigParser(inputPath: String = "untitled2\\data\\data.csv", inputFormat: String = "csv", outputFormat: String = "csv" , outputPath: String = "untitled2\\result\\ResultData.csv", service: String = "service1", clientId : String ="292494523"  )
 
 object ConfigParser {
 
@@ -23,7 +23,7 @@ object ConfigParser {
       opt[String]("inputPath")
         .required()
         .action((x, c) => c.copy(inputPath = x))
-        .text("D:\\microserviceTP\\untitled2\\data\\data.csv"),
+        .text("untitled2\\data\\data.csv"),
 
       opt[String]("inputFormat")
         .required()
@@ -33,7 +33,7 @@ object ConfigParser {
       opt[String]("outputPath")
         .required()
         .action((x, c) => c.copy(outputPath = x))
-        .text("D:\\microserviceTP\\untitled2\\result\\ResultData.csv"),
+        .text("untitled2\\result\\ResultData.csv"),
 
       opt[String]("outputFormat")
         .required()

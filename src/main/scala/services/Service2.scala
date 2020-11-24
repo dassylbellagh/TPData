@@ -33,7 +33,7 @@ object Service2 {
     var df13 = df12.withColumn("Total Cost", hash(df12.columns.map(col):_*))
     var df14 = df13.withColumn("Total Profit", hash(df13.columns.map(col):_*))
 
-    println("On hash colonne par colonne, dans cet exemple on a pris 2 colonnes car ça bouffe trop de RAM d'afficher toutes les colonnes")
+    println("hash colonne par colonne, dans cet exemple j'ai a pris 2 colonnes car ça bouffe trop de RAM d'afficher toutes les colonnes")
     df2.show()
 
     //Récupérer les lignes sauf celles du client 292494523
